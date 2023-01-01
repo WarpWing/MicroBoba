@@ -9,7 +9,7 @@ def form_callback():
     
 
 with st.form(key='order_form',clear_on_submit=True):
-    title = st.text_input('Name', value="",key="name")
+    name = st.text_input('Name', value="",key="name")
     slider_input = st.slider('My slider', 0, 10, 5, key='my_slider')
     checkbox_input = st.checkbox('Yes or No', key='my_checkbox')
     submit_button = st.form_submit_button(label='Submit', on_click=form_callback)
